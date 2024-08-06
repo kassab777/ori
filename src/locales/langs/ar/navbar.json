@@ -1,0 +1,19 @@
+{
+  "overview": "نظرة عامة",
+  "management": "إدارة",
+  "controle": "التحكم",
+  "services": "خدمات",
+  "sub-service": "الخدمات الفرعية",
+
+  "dashboard": "لوحة القيادة",
+  "home": "الرئيسية",
+  "main-services": "الخدمات الرئيسية",
+  "users": "المستخدمين",
+  "roles": "الصلاحيات",
+  "setting": "الإعدادات",
+  "main-setting": "الإعداد الرئيسي",
+  "privacy": "الخصوصية",
+  "about-us": "معلومات عنا",
+  "term": "الشروط",
+  "common-questions": "الأسئلة الشائعه"
+}

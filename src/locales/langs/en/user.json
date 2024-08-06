@@ -1,0 +1,47 @@
+{
+  "button": {
+    "save": "Save changes",
+    "new": "New User",
+    "create": "Create User"
+  },
+
+  "form": {
+    "name": {
+      "label": "Name",
+      "required": "Name is required"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "example@gmail.com",
+      "required": "Email is required",
+      "format": "Email must be a valid email address"
+    },
+    "roles_name": {
+      "label": "Role",
+      "required": "Role is required"
+    },
+    "photo": {
+      "label": "Avatar",
+      "required": "Avatar is required"
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "6+ characters",
+      "required": "Password is required!",
+      "min": "Password must be at least 6 characters!"
+    },
+    "phone": {
+      "label": "Phone number",
+      "required": "Role is required",
+      "placeholder": "Enter phone number"
+    },
+    "date_of_birth": {
+      "label": "Date of birth",
+      "required": "Role is required"
+    },
+    "national_id": {
+      "label": "National id",
+      "required": "Role is required"
+    }
+  }
+}

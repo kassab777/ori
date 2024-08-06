@@ -1,0 +1,66 @@
+{
+  "sign-in": {
+    "body": {
+      "sign-in-to-your-account": "Sign in to your account",
+      "don't-have-an-account": "Don't have an account?",
+      "get-started": "Get started",
+      "forgot-password": "Forgot password?",
+      "sign-in": "Sign in",
+      "sign-in...": "Sign in..."
+    },
+
+    "form": {
+      "email": {
+        "label": "Email address",
+        "min": "Email is required!",
+        "format": "Email must be a valid email address!"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "6+ characters",
+        "required": "Password is required!",
+        "min": "Password must be at least 6 characters!"
+      }
+    }
+  },
+
+  "sign-up": {
+    "body": {
+      "sign-in": "Sign in",
+      "get-started-absolutely-free": "Get started absolutely free",
+      "already-have-an-account": " Already have an account?",
+      "terms-of-service": "Terms of service",
+      "and": "and",
+      "privacy-policy": "Privacy policy",
+      "create-account": "Create account",
+      "by-signing-up,i-agree-to": "By signing up, I agree to",
+      "create-account...": "Create account..."
+    },
+
+    "form": {
+      "firstName": {
+        "label": "First name",
+        "min": "First name is required!"
+      },
+      "lastName": {
+        "label": "Last name",
+        "min": "'Last name is required!'"
+      },
+      "email": {
+        "label": "Email address",
+        "min": "Email is required!",
+        "format": "Email must be a valid email address!"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "6+ characters",
+        "required": "Password is required!",
+        "min": "Password must be at least 6 characters!"
+      }
+    }
+  },
+
+  "alert": {
+    "Invalid email or password": "Invalid email or password"
+  }
+}

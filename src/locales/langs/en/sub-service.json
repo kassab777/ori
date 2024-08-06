@@ -1,0 +1,54 @@
+{
+  "button": {
+    "save": "Save changes",
+    "new": "New Sub Service",
+    "create": "Create Sub Service",
+    "delete": "Delete",
+    "options": "Options"
+  },
+
+  "dialog": {
+    "create": "New Sub Service",
+    "update": "Update Sub Service",
+    "delete": "Delete Sub Service",
+    "errror_match": "Confirmation does not match"
+  },
+
+  "form": {
+    "name": {
+      "label": "Name",
+      "required": "Name is required"
+    },
+    "description": {
+      "label": "Description",
+      "required": "Description is required"
+    },
+    "price": {
+      "label": "Price",
+      "required": "Price is required"
+    },
+    "icon": {
+      "label": "Icon",
+      "required": "Icon is required"
+    },
+    "photo": {
+      "label": "Photo",
+      "required": "Photo is required"
+    },
+    "confirm": {
+      "label": "Confirm",
+      "required": "Confirm is required"
+    }
+  },
+
+  "option": {
+    "key": {
+      "label": "Key",
+      "required": "Key is required"
+    },
+    "type": {
+      "label": "Type",
+      "required": "Type is required"
+    }
+  }
+}

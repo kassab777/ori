@@ -1,0 +1,74 @@
+{
+  "button": {
+    "save": "Save changes"
+  },
+
+  "form": {
+    "site_logo_single": {
+      "label": "Site logo single",
+      "required": "Site logo single is required"
+    },
+    "site_logo_full": {
+      "label": "Site logo full",
+      "required": "Site logo full is required"
+    },
+    "site_logo_dark": {
+      "label": "Site logo dark",
+      "required": "Site logo dark is required"
+    },
+    "site_name_ar": {
+      "label": "Site name arabic",
+      "required": "Site name arabic is required"
+    },
+    "site_name_en": {
+      "label": "Site name english",
+      "required": "Site name english is required"
+    },
+    "info_email": {
+      "label": "Info email",
+      "required": "Info email is required",
+      "format": "Email must be a valid email address"
+    },
+    "mobile": {
+      "label": "mobile",
+      "required": "mobile is required"
+    },
+    "tax_added_value": {
+      "label": "Tax added value",
+      "required": "Tax added value is required",
+      "placeholder": "Enter phone number"
+    },
+    "tiktok": {
+      "label": "tiktok",
+      "required": "tiktok is required",
+      "format": "tiktok must be a valid URL address"
+    },
+    "instagram": {
+      "label": "instagram",
+      "required": "instagram is required",
+      "format": "instagram must be a valid URL address"
+    },
+    "snapchat": {
+      "label": "snapchat",
+      "required": "snapchat is required",
+      "format": "snapchat must be a valid URL address"
+    },
+    "twitter": {
+      "label": "Twitter",
+      "required": "Twitter is required",
+      "format": "Twitter must be a valid URL address"
+    },
+    "siteMaintenanceMsg": {
+      "label": "Site maintenance message",
+      "required": "Site maintenance message is required"
+    },
+    "maintenance_mode": {
+      "label": "maintenance mode arabic",
+      "required": "maintenance mode is required"
+    },
+    "choose_option_maintenance": {
+      "0": "Inactivation",
+      "1": "Activation"
+    }
+  }
+}

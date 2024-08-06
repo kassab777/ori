@@ -1,0 +1,18 @@
+{
+  "button": {
+    "save": "Save changes",
+    "new": "New Question",
+    "create": "Create Question"
+  },
+
+  "form": {
+    "question": {
+      "label": "Question",
+      "required": "Question is required"
+    },
+    "answer": {
+      "label": "Answer",
+      "required": "Answer is required"
+    }
+  }
+}

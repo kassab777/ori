@@ -1,0 +1,29 @@
+{
+  "list": "قائمة",
+  "delete": "حذف",
+  "allowed": "مسموح به",
+  "max-size-of": "الحد الأقصى لحجم",
+  "no_data": "لايوجد بيانات",
+  "no_results_found": "لم يتم العثور على نتائج",
+
+  "button": {
+    "actions": "الإجراءات",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "cancel": "إلغاء",
+    "details": "تفاصيل",
+    "logout": "تسجيل الخروج"
+  },
+
+  "confirm": {
+    "are-you-sure-want-to-delete": "هل أنت متأكد أنك تريد حذف "
+  },
+
+  "alert": {
+    "update-success": "تم التحديث بنجاح!",
+    "update-error": "خطأ في التحديث!",
+    "create-success": "تم الإنشاء بنجاح!",
+    "delete-success": "تم الحذف بنجاح!",
+    "not-permission": "لا يوجد إذن!"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "list": "List",
+  "delete": "Delete",
+  "allowed": "Allowed",
+  "max-size-of": "max size of",
+  "no_data": "No data",
+  "no_results_found": "No results found",
+
+  "button": {
+    "actions": "Actions",
+    "edit": "Edit",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "details": "Details",
+    "logout": "Logout"
+  },
+
+  "confirm": {
+    "are-you-sure-want-to-delete": "Are you sure want to delete "
+  },
+
+  "alert": {
+    "update-success": "Update success!",
+    "update-error": "Update error!",
+    "create-success": "Create success!",
+    "delete-success": "Delete success!",
+    "not-permission": "No permission!"
+  }
+}

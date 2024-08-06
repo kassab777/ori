@@ -1,0 +1,142 @@
+{
+  "sign-in": {
+    "body": {
+      "sign-in-to-your-account": "Sign in to your account",
+      "don't-have-an-account": "Don't have an account?",
+      "get-started": "Get started",
+      "forgot-password": "Forgot password?",
+      "sign-in": "Sign in",
+      "sign-in...": "Sign in..."
+    },
+
+    "form": {
+      "email": {
+        "label": "Email address",
+        "min": "Email is required!",
+        "format": "Email must be a valid email address!"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "6+ characters",
+        "required": "Password is required!",
+        "min": "Password must be at least 6 characters!"
+      }
+    }
+  },
+
+  "sign-up": {
+    "body": {
+      "sign-in": "Sign in",
+      "get-started-absolutely-free": "Get started absolutely free",
+      "already-have-an-account": " Already have an account?",
+      "terms-of-service": "Terms of service",
+      "and": "and",
+      "privacy-policy": "Privacy policy",
+      "create-account": "Create account",
+      "by-signing-up,i-agree-to": "By signing up, I agree to",
+      "create-account...": "Create account..."
+    },
+
+    "form": {
+      "firstName": {
+        "label": "First name",
+        "min": "First name is required!"
+      },
+      "lastName": {
+        "label": "Last name",
+        "min": "'Last name is required!'"
+      },
+      "email": {
+        "label": "Email address",
+        "min": "Email is required!",
+        "format": "Email must be a valid email address!"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "6+ characters",
+        "required": "Password is required!",
+        "min": "Password must be at least 6 characters!"
+      }
+    }
+  },
+
+  "reset-password": {
+    "body": {
+      "forgot-your-password": "Forgot your password?",
+      "helperText": "Please enter the email address associated with your account and we'll email you a link to reset your password.",
+      "send-request...": "Send request...",
+      "send-request": "Send request",
+      "return-to-sign-in": "Return to sign in"
+    },
+
+    "form": {
+      "email": {
+        "label": "Email address",
+        "min": "Email is required!",
+        "format": "Email must be a valid email address!"
+      }
+    }
+  },
+
+  "update-password": {
+    "body": {
+      "request-sent-successfully": "Request sent successfully!",
+      "helperText": "We've sent a 6-digit confirmation email to your email. \nPlease enter the code in below box to verify your email.",
+      "update-password": "Update password",
+      "don’t-have-a-code": "Don’t have a code?",
+      "resend-code": "Resend code",
+      "return-to-sign-in": "Return to sign in",
+      "update-password...": "Update password..."
+    },
+    "form": {
+      "code": {
+        "label": "Code",
+        "required": "Code is required!",
+        "min": "Code must be at least 6 characters!"
+      },
+      "email": {
+        "label": "Email address",
+        "placeholder": "example@gmail.com",
+        "min": "Email is required!",
+        "format": "Email must be a valid email address!"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "6+ characters",
+        "required": "Password is required!",
+        "min": "Password must be at least 6 characters!"
+      },
+      "confirmPassword": {
+        "label": "Confirm new password",
+        "min": "Confirm password is required!",
+        "match": "Passwords do not match!"
+      }
+    }
+  },
+
+  "verify": {
+    "body": {
+      "please-check-your-email": "Please check your email!",
+      "helperText": "We've emailed a 6-digit confirmation code. \nPlease enter the code in the box below to verify your email.",
+      "don’t-have-a-code": "Don’t have a code?",
+      "resend-code": "Resend code",
+      "return-to-sign-in": "Return to sign in",
+      "verify": "Verify",
+      "verify...": "Verify..."
+    },
+
+    "form": {
+      "code": {
+        "label": "Code",
+        "required": "Code is required!",
+        "min": "Code must be at least 6 characters!"
+      },
+      "email": {
+        "label": "Email address",
+        "placeholder": "example@gmail.com",
+        "min": "Email is required!",
+        "format": "Email must be a valid email address!"
+      }
+    }
+  }
+}

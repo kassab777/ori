@@ -1,0 +1,19 @@
+{
+  "button": {
+    "save": "Save changes",
+    "new": "New Role",
+    "create": "Create Role"
+  },
+
+  "form": {
+    "name": {
+      "label": "Name",
+      "required": "Name is required"
+    },
+    "permissions": {
+      "label": "Permissions",
+      "required": "Permission is required",
+      "min": "Role must be at least 1 permission"
+    }
+  }
+}

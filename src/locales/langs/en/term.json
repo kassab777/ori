@@ -1,0 +1,13 @@
+{
+  "button": {
+    "save": "Save changes"
+  },
+
+  "form": {
+    "description": {
+      "filed": "Description",
+      "required": "Description is required",
+      "placeholder": "Write something awesome..."
+    }
+  }
+}

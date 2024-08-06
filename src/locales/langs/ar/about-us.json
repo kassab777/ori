@@ -1,0 +1,13 @@
+{
+  "button": {
+    "save": "حفظ التغييرات"
+  },
+
+  "form": {
+    "description": {
+      "filed": "الوصف",
+      "required": "الوصف مطلوب",
+      "placeholder": "اكتب شيئًا..."
+    }
+  }
+}

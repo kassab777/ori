@@ -1,0 +1,47 @@
+{
+  "button": {
+    "save": "Save changes",
+    "new": "New Coupon",
+    "create": "Create Coupon"
+  },
+
+  "form": {
+    "discount_code": {
+      "label": "Discount code",
+      "required": "Discount code is required",
+      "min": "Discount code must be length 8 characters"
+    },
+    "type": {
+      "label": "Type coupon",
+      "required": "Type coupon is required"
+    },
+    "start_date": {
+      "label": "Start date",
+      "required": "Start date is required"
+    },
+    "end_date": {
+      "label": "End date",
+      "required": "End date is required"
+    },
+    "discount": {
+      "label": "Discount",
+      "required": "Discount is required"
+    },
+    "discount_percentage": {
+      "label": "Discount percentage",
+      "required": "Discount percentage is required"
+    },
+    "max_usage": {
+      "label": "Max usage",
+      "required": "Max usage is required"
+    },
+    "max_discount_value": {
+      "label": "Max discount value",
+      "required": "Max discount value is required"
+    },
+    "type_options": {
+      "percentage": "Percentage",
+      "fixed": "Fixed"
+    }
+  }
+}

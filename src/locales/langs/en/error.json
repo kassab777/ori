@@ -1,0 +1,21 @@
+{
+  "403": {
+    "title": "No permission",
+    "description": "The page you’re trying to access has restricted access. Please refer to your system administrator.",
+    "button_text": "Go to home"
+  },
+  "404": {
+    "title": "Sorry, page not found!",
+    "description": "Sorry, we couldn’t find the page you’re looking for. Perhaps you’ve mistyped the URL? Be sure to check your spelling.",
+    "button_text": "Go to home"
+  },
+  "500": {
+    "title": "500 Internal server error",
+    "description": "There was an error, please try again later.",
+    "button_text": "Go to home"
+  },
+  "permission": {
+    "title": "Permission denied",
+    "description": "You do not have permission to access this page."
+  }
+}

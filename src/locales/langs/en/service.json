@@ -1,0 +1,35 @@
+{
+  "button": {
+    "save": "Save changes",
+    "new": "New Service",
+    "create": "Create Service",
+    "delete": "Delete",
+    "sub-services": "Sub services"
+  },
+
+  "dialog": {
+    "create": "New Service",
+    "update": "Update Service",
+    "delete": "Delete Service",
+    "errror_match": "Confirmation does not match"
+  },
+
+  "form": {
+    "name": {
+      "label": "Name",
+      "required": "Name is required"
+    },
+    "icon": {
+      "label": "Icon",
+      "required": "Icon is required"
+    },
+    "photo": {
+      "label": "Photo",
+      "required": "Photo is required"
+    },
+    "confirm": {
+      "label": "Confirm",
+      "required": "Confirm is required"
+    }
+  }
+}
