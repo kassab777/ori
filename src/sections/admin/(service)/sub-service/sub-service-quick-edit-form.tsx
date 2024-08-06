@@ -31,6 +31,8 @@ type Props = {
   serviceId: string;
 };
 
+// ----------------------------------------------------------------------
+
 export function SubServiceQuickEditForm({ currentItem, serviceId, open, onClose }: Props) {
   const { t: tsubservice } = useTranslate('sub-service');
   const { t: tcommon } = useTranslate('common');
@@ -125,6 +127,9 @@ export function SubServiceQuickEditForm({ currentItem, serviceId, open, onClose 
       <Field.UploadAvatar
         name="icon"
         maxSize={3145728}
+        accept={{
+          'image/': ['.svg'],
+        }}
         helperText={
           <Typography
             variant="caption"
@@ -137,13 +142,18 @@ export function SubServiceQuickEditForm({ currentItem, serviceId, open, onClose 
             }}
           >
             {`${tsubservice('form.icon.label')} *`}
-            <br /> {tcommon('allowed')} *.jpeg
+            <br /> {tcommon('allowed')} *.svg
             <br /> {tcommon('max-size-of')} {fData(3145728)}
           </Typography>
         }
       />
 
-      <Field.Upload name="photo" />
+      <Field.Upload
+        name="photo"
+        accept={{
+          'image/': ['.png', '.jpg'],
+        }}
+      />
     </Box>
   );
 

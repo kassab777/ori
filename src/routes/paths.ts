@@ -77,6 +77,12 @@ export const paths = {
         new: `${ROOTS.DASHBOARD}/service/coupon/new`,
         edit: (id: string) => `${ROOTS.DASHBOARD}/service/coupon/${id}/edit`,
       },
+      report: {
+        root: `${ROOTS.DASHBOARD}/service/report`,
+        review: {
+          root: `${ROOTS.DASHBOARD}/service/report/review`
+        }
+      }
     },
     user: {
       root: `${ROOTS.DASHBOARD}/users`,
@@ -84,21 +90,30 @@ export const paths = {
       edit: (id: string) => `${ROOTS.DASHBOARD}/users/${id}/edit`,
     },
     role: {
-      root: `${ROOTS.DASHBOARD}/roles`,
-      new: `${ROOTS.DASHBOARD}/roles/new`,
-      edit: (id: string) => `${ROOTS.DASHBOARD}/roles/${id}/edit`,
-      details: (id: string) => `${ROOTS.DASHBOARD}/roles/${id}`,
+      root: `${ROOTS.DASHBOARD}/role`,
+      new: `${ROOTS.DASHBOARD}/role/new`,
+      edit: (id: string) => `${ROOTS.DASHBOARD}/role/${id}/edit`,
+      details: (id: string) => `${ROOTS.DASHBOARD}/role/${id}`,
+    },
+    page: {
+      root: `${ROOTS.DASHBOARD}/page`,
+      privacy: {
+        root: `${ROOTS.DASHBOARD}/page/privacy`,
+      },
+      aboutUs: {
+        root: `${ROOTS.DASHBOARD}/page/about-us`,
+      },
+      term: {
+        root: `${ROOTS.DASHBOARD}/page/term`
+      },
+      question: {
+        root: `${ROOTS.DASHBOARD}/page/question`,
+        new: `${ROOTS.DASHBOARD}/page/question/new`,
+        edit: (id: string) => `${ROOTS.DASHBOARD}/page/question/${id}/edit`,
+      },
     },
     setting: {
       root: `${ROOTS.DASHBOARD}/setting`,
-      privacy: `${ROOTS.DASHBOARD}/setting/privacy`,
-      aboutUs: `${ROOTS.DASHBOARD}/setting/about-us`,
-      term: `${ROOTS.DASHBOARD}/setting/term`,
-      question: {
-        root: `${ROOTS.DASHBOARD}/setting/question`,
-        new: `${ROOTS.DASHBOARD}/setting/question/new`,
-        edit: (id: string) => `${ROOTS.DASHBOARD}/setting/question/${id}/edit`,
-      },
     }
   },
 };

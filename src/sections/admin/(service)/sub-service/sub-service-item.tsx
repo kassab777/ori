@@ -5,6 +5,8 @@ import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
 import { Button, Divider, Typography, IconButton } from '@mui/material';
 
+import { RouterLink } from 'src/routes/components';
+
 import { useBoolean } from 'src/hooks/use-boolean';
 
 import { useTranslate } from 'src/locales';
@@ -26,7 +28,7 @@ export default function SubServiceItem({ currentItem, serviceId }: Props) {
   const { id, name, photo } = currentItem;
 
   const { t: tcommon } = useTranslate('common');
-  const { t: tsubservice } = useTranslate('service');
+  const { t: tsubservice } = useTranslate('sub-service');
 
   const confirmDelete = useBoolean();
   const confirmEdit = useBoolean();
@@ -76,6 +78,8 @@ export default function SubServiceItem({ currentItem, serviceId }: Props) {
       </Button>
       <Button
         variant="contained"
+        component={RouterLink}
+        href={`option/${id}`}
         color="info"
         sx={{ flex: '0.5' }}
         disableElevation

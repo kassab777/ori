@@ -8,10 +8,10 @@ export type IMainSettingItem = {
     info_email: string;
     mobile: string;
     tax_added_value: string;
-    tiktok: string;
-    instagram: string;
-    snapchat: string;
-    twitter: string;
+    tiktok: string | null;
+    instagram: string | null;
+    snapchat: string | null;
+    twitter: string | null;
     siteMaintenanceMsg: string;
     maintenance_mode: string;
 }

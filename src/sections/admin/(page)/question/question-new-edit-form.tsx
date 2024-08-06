@@ -68,13 +68,13 @@ export default function NewEditForm({ currentItem, currentRole }: Props) {
         await updateQuestion(`${currentItem?.id}`, data);
 
         reset();
-        router.push(paths.dashboard.setting.question.root);
+        router.push(paths.dashboard.page.question.root);
         toast.success(tcommon('alert.update-success'));
       } else if (ACCEPT_CREATE_ROLE) {
         await createQuestion(data);
 
         reset();
-        router.push(paths.dashboard.setting.question.root);
+        router.push(paths.dashboard.page.question.root);
         toast.success(tcommon('alert.create-success'));
       } else {
         toast.warning(`${tcommon('alert.not-permission')}`);

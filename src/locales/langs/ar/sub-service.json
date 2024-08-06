@@ -39,5 +39,22 @@
       "label": "التأكيد",
       "required": "التأكيد مطلوب"
     }
+  },
+
+  "option": {
+    "key": {
+      "label": "المفتاح",
+      "required": "المفتاح مطلوب"
+    },
+    "type": {
+      "label": "النوع",
+      "required": "النوع مطلوب"
+    },
+    "type_option": {
+      "radio": "زر اختيار",
+      "number": "رقم",
+      "text": "نص",
+      "image": "صورة"
+    }
   }
 }

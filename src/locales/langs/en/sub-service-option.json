@@ -1,0 +1,33 @@
+{
+  "button": {
+    "save": "Save changes",
+    "new": "New Option",
+    "create": "Create Option",
+    "delete": "Delete",
+    "options": "Options"
+  },
+
+  "dialog": {
+    "create": "New Option",
+    "update": "Update Option",
+    "delete": "Delete Option",
+    "errror_match": "Confirmation does not match"
+  },
+
+  "form": {
+    "key": {
+      "label": "Key",
+      "required": "Key is required"
+    },
+    "type": {
+      "label": "Type",
+      "required": "Type is required"
+    },
+    "type_option": {
+      "radio": "Radio",
+      "number": "Number",
+      "text": "Text",
+      "image": "Image"
+    }
+  }
+}

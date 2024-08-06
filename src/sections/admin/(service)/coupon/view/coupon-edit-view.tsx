@@ -45,7 +45,7 @@ export function CouponEditView({ id }: Props) {
           <RoleBasedGuard
             hasContent
             currentRole={userPermissions}
-            acceptRoles={['update-question']}
+            acceptRoles={['update-coupon']}
             sx={RoleBasedGuardStyle}
           >
             <CustomBreadcrumbs

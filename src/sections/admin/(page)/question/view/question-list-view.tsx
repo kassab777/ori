@@ -55,7 +55,7 @@ export function QuestionListView() {
                 { name: tnav('dashboard'), href: paths.dashboard.root },
                 {
                   name: tnav('common-questions'),
-                  href: paths.dashboard.setting.question.root,
+                  href: paths.dashboard.page.question.root,
                 },
                 { name: tcommon('list') },
               ]}
@@ -63,7 +63,7 @@ export function QuestionListView() {
                 ACCEPT_CREATE_ROLE && (
                   <Button
                     component={RouterLink}
-                    href={paths.dashboard.setting.question.new}
+                    href={paths.dashboard.page.question.new}
                     variant="contained"
                     startIcon={<Iconify icon="mingcute:add-line" />}
                   >

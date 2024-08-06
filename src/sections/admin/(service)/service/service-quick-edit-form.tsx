@@ -100,6 +100,11 @@ export function ServiceQuickEditForm({ currentItem, open, onClose }: Props) {
     }
   });
 
+  const handleClose = () => {
+    onClose();
+    reset();
+  };
+
   const renderContent = (
     <>
       <Box
@@ -111,6 +116,9 @@ export function ServiceQuickEditForm({ currentItem, open, onClose }: Props) {
         <Field.UploadAvatar
           name="icon"
           maxSize={3145728}
+          accept={{
+            'image/': ['.svg'],
+          }}
           helperText={
             <Typography
               variant="caption"
@@ -123,13 +131,18 @@ export function ServiceQuickEditForm({ currentItem, open, onClose }: Props) {
               }}
             >
               {`${tservice('form.icon.label')} *`}
-              <br /> {tcommon('allowed')} *.jpeg
+              <br /> {tcommon('allowed')} *.svg
               <br /> {tcommon('max-size-of')} {fData(3145728)}
             </Typography>
           }
         />
 
-        <Field.Upload name="photo" />
+        <Field.Upload
+          name="photo"
+          accept={{
+            'image/*': ['.png', '.jpeg'],
+          }}
+        />
       </Box>
       <Box
         rowGap={3}
@@ -148,7 +161,7 @@ export function ServiceQuickEditForm({ currentItem, open, onClose }: Props) {
       fullWidth
       maxWidth={false}
       open={open}
-      onClose={onClose}
+      onClose={handleClose}
       PaperProps={{ sx: { maxWidth: 820 } }}
     >
       <Form methods={methods} onSubmit={onSubmit}>
@@ -161,13 +174,7 @@ export function ServiceQuickEditForm({ currentItem, open, onClose }: Props) {
         <DialogContent>{renderContent}</DialogContent>
 
         <DialogActions>
-          <Button
-            variant="outlined"
-            onClick={() => {
-              onClose();
-              reset();
-            }}
-          >
+          <Button variant="outlined" onClick={handleClose}>
             {tcommon('button.cancel')}
           </Button>
 

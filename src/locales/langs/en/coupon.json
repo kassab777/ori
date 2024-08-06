@@ -35,10 +35,6 @@
       "label": "Max usage",
       "required": "Max usage is required"
     },
-    "max_discount_value": {
-      "label": "Max discount value",
-      "required": "Max discount value is required"
-    },
     "type_options": {
       "percentage": "Percentage",
       "fixed": "Fixed"

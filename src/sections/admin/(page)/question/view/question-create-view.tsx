@@ -47,7 +47,7 @@ export function QuestionCreateView() {
                 { name: tnav('dashboard'), href: paths.dashboard.root },
                 {
                   name: tnav('common-questions'),
-                  href: paths.dashboard.setting.question.root,
+                  href: paths.dashboard.page.question.root,
                 },
                 { name: tquestion('button.new') },
               ]}

@@ -48,7 +48,7 @@ export async function createSubServiceOption(data: Partial<ISubServiceOptionItem
 }
 
 // ----------------------------- UPDATE_SUB_SERVICE_OPTIONS -----------------------------
-export async function updateSubServiceOption(id: string, data: Partial<ISubServiceOptionItem[]>) {
+export async function updateSubServiceOption(id: string, data: Partial<ISubServiceOptionItem>) {
     const url = `${endpoints.serviceGroup.subServiceOption.edit}/${id}`;
 
     await axiosInstance.post(url, data);
@@ -58,11 +58,11 @@ export async function updateSubServiceOption(id: string, data: Partial<ISubServi
 }
 
 // ----------------------------- DELETE_SUB_SERVICE_OPTIONS -----------------------------
-export async function deleteSubServiceOption(id: string, serviceId: string) {
+export async function deleteSubServiceOption(id: string, subServiceId: string) {
     const url = `${endpoints.serviceGroup.subServiceOption.delete}/${id}`;
 
     await axiosInstance.delete(url);
 
-    mutate(`${endpoints.serviceGroup.service.subService}/${serviceId}`);
+    mutate(`${endpoints.serviceGroup.service.subService}/${subServiceId}`);
     mutate(url);
 }

@@ -54,7 +54,10 @@ export default function NewEditForm({ currentItem, currentRole }: Props) {
       .email({ message: tsetting('form.info_email.format') }),
     mobile: schemaHelper.phoneNumber({
       isValidPhoneNumber,
-      message: { required_error: tsetting('form.mobile.required') },
+      message: {
+        required_error: tsetting('form.mobile.required'),
+        invalid_type_error: tsetting('form.mobile.format'),
+      },
     }),
     tax_added_value: zod.string().min(1, { message: tsetting('form.tax_added_value.required') }),
 
@@ -62,19 +65,19 @@ export default function NewEditForm({ currentItem, currentRole }: Props) {
     tiktok: zod
       .string()
       .url({ message: tsetting('form.tiktok.format') })
-      .optional(),
+      .nullable(),
     instagram: zod
       .string()
       .url({ message: tsetting('form.tiktok.format') })
-      .optional(),
+      .nullable(),
     snapchat: zod
       .string()
       .url({ message: tsetting('form.tiktok.format') })
-      .optional(),
+      .nullable(),
     twitter: zod
       .string()
       .url({ message: tsetting('form.tiktok.format') })
-      .optional(),
+      .nullable(),
 
     //
     maintenance_mode: zod
@@ -94,10 +97,10 @@ export default function NewEditForm({ currentItem, currentRole }: Props) {
       info_email: currentItem?.info_email || '',
       mobile: currentItem?.mobile || '',
       tax_added_value: currentItem?.tax_added_value || '',
-      tiktok: currentItem?.tiktok || '',
-      instagram: currentItem?.instagram || '',
-      snapchat: currentItem?.snapchat || '',
-      twitter: currentItem?.twitter || '',
+      tiktok: currentItem?.tiktok || null,
+      instagram: currentItem?.instagram || null,
+      snapchat: currentItem?.snapchat || null,
+      twitter: currentItem?.twitter || null,
       siteMaintenanceMsg: currentItem?.siteMaintenanceMsg || '',
       maintenance_mode: currentItem?.maintenance_mode || '',
     }),
@@ -199,29 +202,6 @@ export default function NewEditForm({ currentItem, currentRole }: Props) {
         }}
       >
         <Field.UploadAvatar
-          name="site_logo_full"
-          maxSize={3145728}
-          helperText={
-            <Typography
-              variant="caption"
-              sx={{
-                mt: 3,
-                mx: 'auto',
-                display: 'block',
-                textAlign: 'center',
-                color: 'text.disabled',
-              }}
-            >
-              {`${tsetting('form.site_logo_full.label')} *`}
-              <br /> {tcommon('allowed')} *.jpeg, *.jpg, *.png, *.gif
-              <br /> {tcommon('max-size-of')} {fData(3145728)}
-            </Typography>
-          }
-        />
-      </Card>
-
-      <Card sx={{ pt: 5, pb: 5, px: 3 }}>
-        <Field.Upload
           name="site_logo_dark"
           maxSize={3145728}
           helperText={
@@ -236,6 +216,29 @@ export default function NewEditForm({ currentItem, currentRole }: Props) {
               }}
             >
               {`${tsetting('form.site_logo_dark.label')} *`}
+              <br /> {tcommon('allowed')} *.jpeg, *.jpg, *.png, *.gif
+              <br /> {tcommon('max-size-of')} {fData(3145728)}
+            </Typography>
+          }
+        />
+      </Card>
+
+      <Card sx={{ pt: 5, pb: 5, px: 3 }}>
+        <Field.Upload
+          name="site_logo_full"
+          maxSize={3145728}
+          helperText={
+            <Typography
+              variant="caption"
+              sx={{
+                mt: 3,
+                mx: 'auto',
+                display: 'block',
+                textAlign: 'center',
+                color: 'text.disabled',
+              }}
+            >
+              {`${tsetting('form.site_logo_full.label')} *`}
               <br /> {tcommon('allowed')} *.jpeg, *.jpg, *.png, *.gif
               <br /> {tcommon('max-size-of')} {fData(3145728)}
             </Typography>

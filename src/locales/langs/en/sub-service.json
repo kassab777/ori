@@ -49,6 +49,12 @@
     "type": {
       "label": "Type",
       "required": "Type is required"
+    },
+    "type_option": {
+      "radio": "Radio",
+      "number": "Number",
+      "text": "Text",
+      "image": "Image"
     }
   }
 }

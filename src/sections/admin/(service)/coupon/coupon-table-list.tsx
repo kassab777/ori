@@ -20,9 +20,10 @@ import { EmptyContent } from 'src/components/empty-content';
 
 import { DeleteConfirm } from './coupon-confirm';
 import {
-  RenderCellDate,
   RenderCellPrice,
   RenderCellPercent,
+  RenderCellDateEnd,
+  RenderCellDateStart,
   RenderCellDiscountCode,
 } from './coupon-table-row';
 
@@ -37,8 +38,8 @@ export function TableList({ currentRole }: Props) {
   const { t: tcommon } = useTranslate('common');
   const { t: tcoupon } = useTranslate('coupon');
 
-  const ACCEPT_UPDATE_ROLE = Boolean(currentRole.includes('update-question'));
-  const ACCEPT_DELETE_ROLE = Boolean(currentRole.includes('delete-question'));
+  const ACCEPT_UPDATE_ROLE = Boolean(currentRole.includes('update-coupon'));
+  const ACCEPT_DELETE_ROLE = Boolean(currentRole.includes('delete-coupon'));
 
   const [itemDelete, setItemDelete] = useState<{ id: string; label: string } | null>(null);
 
@@ -77,7 +78,8 @@ export function TableList({ currentRole }: Props) {
       headerName: tcoupon('form.discount_code.label'),
       align: 'center',
       headerAlign: 'center',
-      width: 150,
+      minWidth: 150,
+      flex: 1,
       hideable: false,
       disableColumnMenu: true,
       renderCell: (params) => <RenderCellDiscountCode params={params} />,
@@ -100,7 +102,7 @@ export function TableList({ currentRole }: Props) {
       width: 150,
       hideable: false,
       disableColumnMenu: true,
-      renderCell: (params) => <RenderCellDate params={params} />,
+      renderCell: (params) => <RenderCellDateStart params={params} />,
     },
     {
       field: 'end_date',
@@ -110,7 +112,7 @@ export function TableList({ currentRole }: Props) {
       width: 150,
       hideable: false,
       disableColumnMenu: true,
-      renderCell: (params) => <RenderCellDate params={params} />,
+      renderCell: (params) => <RenderCellDateEnd params={params} />,
     },
     {
       field: 'discount',
@@ -142,16 +144,6 @@ export function TableList({ currentRole }: Props) {
       disableColumnMenu: true,
     },
     {
-      field: 'max_discount_value',
-      headerName: tcoupon('form.max_discount_value.label'),
-      align: 'center',
-      headerAlign: 'center',
-      width: 150,
-      hideable: true,
-      disableColumnMenu: true,
-      renderCell: (params) => <RenderCellPrice value={params.row.max_discount_value} />,
-    },
-    {
       type: 'actions',
       field: 'actions',
       headerName: tcommon('button.actions'),
@@ -161,7 +153,7 @@ export function TableList({ currentRole }: Props) {
       sortable: false,
       filterable: false,
       disableColumnMenu: true,
-      getActions: (params: { row: { id: string; discount_code: string } }) => [
+      getActions: (params) => [
         <GridActionsCellItem
           showInMenu
           label={tcommon('button.edit')}

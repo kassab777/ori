@@ -67,6 +67,9 @@ export const endpoints = {
       edit: '/api/dashboard/coupons',
       delete: '/api/dashboard/coupons',
     },
+    review: {
+      list: '/api/dashboard/reviews',
+    },
   },
   pageGroup: {
     question: {

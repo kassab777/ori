@@ -1,0 +1,16 @@
+{
+  "table": {
+    "customer": {
+      "label": "العميل"
+    },
+    "rating": {
+      "label": "التقييم"
+    },
+    "descriptions": {
+      "label": "الوصف"
+    },
+    "created_at": {
+      "label": "تاريخ الإنشاء"
+    }
+  }
+}

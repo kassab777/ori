@@ -1,0 +1,16 @@
+{
+  "table": {
+    "customer": {
+      "label": "Customer"
+    },
+    "rating": {
+      "label": "Rating"
+    },
+    "descriptions": {
+      "label": "Descriptions"
+    },
+    "created_at": {
+      "label": "Created at"
+    }
+  }
+}

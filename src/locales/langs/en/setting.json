@@ -30,8 +30,9 @@
       "format": "Email must be a valid email address"
     },
     "mobile": {
-      "label": "mobile",
-      "required": "mobile is required"
+      "label": "Mobile",
+      "required": "Mobile is required",
+      "format": "Mobile must be a valid phone number"
     },
     "tax_added_value": {
       "label": "Tax added value",

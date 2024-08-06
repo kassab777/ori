@@ -39,7 +39,7 @@ export function CouponCreateView() {
           <RoleBasedGuard
             hasContent
             currentRole={userPermissions}
-            acceptRoles={['create-question']}
+            acceptRoles={['create-coupon']}
             sx={RoleBasedGuardStyle}
           >
             <CustomBreadcrumbs

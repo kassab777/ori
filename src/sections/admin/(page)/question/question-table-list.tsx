@@ -57,7 +57,7 @@ export function TableList({ currentRole }: Props) {
   const handleEditRow = useCallback(
     (id: string) => {
       if (ACCEPT_UPDATE_ROLE) {
-        router.push(paths.dashboard.setting.question.edit(id));
+        router.push(paths.dashboard.page.question.edit(id));
       } else {
         toast.warning(`${tcommon('alert.not-permission')}`);
       }

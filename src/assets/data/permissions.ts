@@ -18,6 +18,21 @@ export const permissions = [
         ],
     },
     {
+        label: 'coupon-page',
+        options: [
+            { label: 'coupon-list', value: 'coupon-list' },
+            { label: 'create-coupon', value: 'create-coupon' },
+            { label: 'update-coupon', value: 'update-coupon' },
+            { label: 'delete-coupon', value: 'delete-coupon' },
+        ],
+    },
+    {
+        label: 'report-service-review-page',
+        options: [
+            { label: 'review-list', value: 'review-list' },
+        ],
+    },
+    {
         label: 'user-page',
         options: [
             { label: 'user-list', value: 'user-list' },

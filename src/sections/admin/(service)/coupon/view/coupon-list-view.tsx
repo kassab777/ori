@@ -36,7 +36,7 @@ export function CouponListView() {
 
   const { userPermissions, userLoading } = useGetMeUser();
 
-  const ACCEPT_CREATE_ROLE = Boolean(userPermissions?.includes('create-question'));
+  const ACCEPT_CREATE_ROLE = Boolean(userPermissions?.includes('create-coupon'));
 
   return (
     <>
@@ -47,7 +47,7 @@ export function CouponListView() {
           <RoleBasedGuard
             hasContent
             currentRole={userPermissions}
-            acceptRoles={['question-list']}
+            acceptRoles={['coupon-list']}
             sx={RoleBasedGuardStyle}
           >
             <CustomBreadcrumbs

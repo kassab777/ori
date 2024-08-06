@@ -80,7 +80,7 @@ export default function ServiceItem({ currentItem }: Props) {
         href={`${id}`}
         variant="contained"
         color="info"
-        sx={{ flex: '0.5' }}
+        sx={{ flex: '0.5', whiteSpace: 'nowrap' }}
         startIcon={<Iconify icon="solar:eye-broken" />}
         disableElevation
       >
